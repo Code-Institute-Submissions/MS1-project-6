@@ -1,2 +1,49 @@
 /* Stylesheet for MS1 project by Mikael Lindberg */
 
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header / navbar */
+
+.navbar-background {
+    width: 100%;
+    background-color: #ffaaff
+}
+
+#navbarNav {
+    padding-left: 20px;
+}
+
+/* MAin section */
+
+.background-image {
+    background: url(.../img/background1.jpg) center no-repeat;
+    width: 100%;
+}
+
+.main-section {
+    height: 800px;
+}
+
+.main-textarea {
+    
+}
+
+.hero-image {
+    
+}
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: #ffaaff;
+    height: 80px;
+    text-align: center;
+}
