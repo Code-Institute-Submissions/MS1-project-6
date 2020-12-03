@@ -1,14 +1,8 @@
 /* Stylesheet for MS1 project by Mikael Lindberg */
 
-* {
-    margin: 0;
-	text-align: left;
-}
-
 body {
     margin: 0;
 	padding: 0;
-	text-align: left;
     background-color: #423939; 
     color: #fafafa;
     font-family: "Roboto", "Dancing script", sans-serif;
@@ -91,7 +85,7 @@ br {
 .main-pics {
     margin: 15% 2% 15% 2%;
     padding: 0;
-    max-width: 95%;
+    max-width: 90%;
     height:600px;
     text-align: center;
 }
@@ -100,8 +94,7 @@ br {
     height: 100%;
     max-width: 100%;
     display: inline-block;
-    border-radius: 50%
-    
+    border-radius: 50%;
 }
 
 .main-text {
@@ -138,10 +131,101 @@ br {
     max-width: 600px;
     height: 600px;
     text-align: center;
+}
+
+#services-pic {
+    margin-top: 20px;
+    height: 90%;
+    max-width: 90%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.gallery-text h2 {
+    font-family: "Dancing script", sans-serif;
+    font-size: 72px;
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.gallery-text p {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact-pic {
+    margin-top: 20px;
+    height: 90%;
+    max-width: 90%;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.signup-form {
+    margin-top: 10px;
+    color: #fafafa;
+    background-color: rgba(60,60,60, .6);
+    max-width: 600px;
+    position: relative;
+    padding: 30px;
+}
+
+.signup-form h5 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input #textarea {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0 20px;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #3b3838;
+    color:  #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #202020;
 
 /* Footer */
 
 footer {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    margin: 0;
+    padding-top: 30px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #fafafa;
     height: 80px;
