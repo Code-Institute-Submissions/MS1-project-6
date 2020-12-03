@@ -14,49 +14,62 @@
 </head>
 <body>
 
-<div class="container-fluid container-background">
+<div class="container-fluid bg-container">
+    <!-- Navbar / header -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Photographer <br> <div class="brand-name">Sussi Thunell</div></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- Navbar / header -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top"> <!-- Change background color, to RGBa transparent -->
-    <a class="navbar-brand" href="index.html">Photographer <br> <div class="brand-name">Sussi Thunell</div></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item active mr-2">
-                <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="gallery.html">Galley</a>
-            </li>
-            <li class="nav-item mr-2">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav> <!-- Navbar end -->
-
-<!-- Main section hero image -->
-<section class="container-fluid background-image">
-    <div class="row">
-        <div class="col-md-6 hero-image main-section">
-            <h1>Sussi Thunells services page</h1>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active mr-2">
+                    <a class="nav-link" href="services.html">Services<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="col-md-6 main-textarea main-section">
-        <p>Jadajadjada</p>
-        </div>
-    </div>
+    </nav> <!-- Navbar end -->
+</div> <!-- bg-container  end -->
 
-</section> <!-- man section end -->
-</div> <!-- container  end -->
+<!-- Main section -->
+    <section class="container-fluid main-section">
+        <div class="opaque-overlay">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-text">
+                        <h2>My Services</h2>
+                        <p>Engage me as your photographer for these special occasions:</p>
+                        <ul>
+                            <li>Newborn / Baptism</li>
+                            <li>Children & Family</li>
+                            <li>Friends & Gatherings</li>
+                            <li>Loved Pets</li>
+                            <li>Bachelor / Bachelorette parties</li>
+                            <li>Weddings</li>                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-pics">
+                        <img src="assets/img/services-pic.jpg" alt="Image of Photographer" id="mainsection-pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- man section end -->
 
 <footer class="fixed-bottom">
-    <p>Copyright &copy; 2020</p>
+    <p>Copyright &copy; 2020. All Rights Reserved.</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

@@ -1,25 +1,25 @@
 /* Stylesheet for MS1 project by Mikael Lindberg */
 
+* {
+    margin: 0;
+	text-align: left;
+}
+
 body {
-    width: 100%;
-    height: 100vh;
+    margin: 0;
+	padding: 0;
+	text-align: left;
+    background-color: #423939; 
     color: #fafafa;
     font-family: "Roboto", "Dancing script", sans-serif;
 }
 
-.container-background {
-    background: #202020; /* url(".../img/background4.jpg") no-repeat bottom right; */
-    height: 100vh;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
+.bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;  
 }
 
 /* Header / navbar */
@@ -27,7 +27,8 @@ body {
 .navbar {
     height: 60px;
     margin: 0 0;
-    padding: 0 20 0 20;
+    padding: 0 10px 5px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
 
@@ -40,9 +41,9 @@ body {
 .brand-name {
     font-family: "Dancing script", sans-serif;
     text-transform: capitalize;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 400;
-    line-height: 0.6;
+    line-height: 0.7;
 }
 
 br {
@@ -51,42 +52,97 @@ br {
 }
 
 .navbar-nav, .nav-item {
-    padding-left: 20px;
+    padding: 20px 0 7px 20px;
     padding-top: 22px;
+    font-size: 22px;
 }
 
 /* MAin section */
 
-section {
-    z-index: 1;    
-
-}
-
-.background-image {
-    width: 100%;
-}
-
 .main-section {
-    height: 800px;
+    background: url("../img/background4.jpg") no-repeat center;
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
 }
 
-.main-textarea {
+.opaque-overlay { /* ok*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.row {
+    margin-top: 60px;
+    padding: 10px 20px 0 20px;
+}
+
+.main-pics {
+    margin: 15% 2% 15% 2%;
+    padding: 0;
+    max-width: 95%;
+    height:600px;
+    text-align: center;
+}
+
+#mainsection-pic {
+    height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    border-radius: 50%
     
 }
 
-.hero-image {
-    
+.main-text {
+    margin: 15% 15% 15% 15%;
+    max-width: 75%;
+    height:600px;
 }
 
+.main-text h2 {
+    font-family: "Dancing script", sans-serif;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 30px;
+}
 
+.main-text p {
+    font-size: 28px;
+    text-align: center;
+}
 
+.main-text ul {
+    margin: 0;
+    padding-top: 20px;
+    list-style: none;
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    line-height: 2.0;
+}
 
-
+.services-pics {
+    margin: 15% 10% 15% 10%;
+    padding: 0;
+    max-width: 600px;
+    height: 600px;
+    text-align: center;
 
 /* Footer */
 
 footer {
-    background-color: #202020;
+    background-color: rgba(0, 0, 0, 0.3);
     color: #fafafa;
     height: 80px;
     text-align: center;
